@@ -1,0 +1,9 @@
+row, col = 0, 0
+
+for i in range(5):
+    line = list(map(int, input().split()))
+    for j in range(5):
+        if line[j] == 1:
+            row, col = i + 1, j + 1  # 1-based index
+
+print(abs(row - 3) + abs(col - 3))
